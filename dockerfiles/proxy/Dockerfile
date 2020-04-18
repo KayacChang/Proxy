@@ -1,0 +1,6 @@
+FROM nginx:alpine
+
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx/conf.d /etc/nginx/conf.d
+COPY ./nginx/sites-enabled.d /etc/nginx/sites-enabled.d
+
