@@ -4,7 +4,7 @@ certbot-test:
 	@sudo ./register_ssl.sh \
 							--domains "$(DOMAINS)" \
 							--email $(EMAIL) \
-							--data-path ./webserver/certbot \
+							--data-path ./certbot \
 							--staging 1
 
 certbot-prod:
@@ -12,7 +12,7 @@ certbot-prod:
 	@sudo ./register_ssl.sh \
 							--domains "$(DOMAINS)" \
 							--email $(EMAIL) \
-							--data-path ./webserver/certbot \
+							--data-path ./certbot \
 							--staging 0
 
 deploy-test:
