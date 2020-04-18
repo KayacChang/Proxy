@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  proxy:
+  nginx:
     build:
       context: "."
       dockerfile: "./dockerfiles/proxy/Dockerfile"
@@ -21,4 +21,4 @@ services:
     restart: unless-stopped
     entrypoint: /bin/sh -c "trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;"
     depends_on:
-      - proxy
+      - nginx
