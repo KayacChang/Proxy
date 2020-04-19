@@ -1,7 +1,7 @@
 
 certbot-test:
 	@chmod +x ./register_ssl.sh
-	@sudo ./register_ssl.sh \
+	@sudo ./scripts/register_ssl.sh \
 							--domains "$(DOMAINS)" \
 							--email $(EMAIL) \
 							--data-path ./certbot \
@@ -9,7 +9,7 @@ certbot-test:
 
 certbot-prod:
 	@chmod +x ./register_ssl.sh
-	@sudo ./register_ssl.sh \
+	@sudo ./scripts/register_ssl.sh \
 							--domains "$(DOMAINS)" \
 							--email $(EMAIL) \
 							--data-path ./certbot \
