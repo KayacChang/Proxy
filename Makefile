@@ -16,11 +16,11 @@ certbot-prod:
 							--staging 0
 
 deploy-test:
-	@docker-compose \
+	@sudo docker-compose \
 					-f docker-compose.yml \
 					up --build --force-recreate
 
 deploy-prod:
-	@docker-compose \
+	@sudo docker-compose \
 					-f docker-compose.yml \
 					up -d --build --force-recreate
