@@ -1,6 +1,6 @@
 
 certbot-test:
-	@chmod +x ./register_ssl.sh
+	@chmod +x ./scripts/register_ssl.sh
 	@sudo ./scripts/register_ssl.sh \
 							--domains "$(DOMAINS)" \
 							--email $(EMAIL) \
@@ -8,7 +8,7 @@ certbot-test:
 							--staging 1
 
 certbot-prod:
-	@chmod +x ./register_ssl.sh
+	@chmod +x ./scripts/register_ssl.sh
 	@sudo ./scripts/register_ssl.sh \
 							--domains "$(DOMAINS)" \
 							--email $(EMAIL) \
