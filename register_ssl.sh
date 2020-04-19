@@ -153,7 +153,7 @@ done
 echo; echo "[i] Starting nginx..."; echo;
 
 # Restarting for case if nginx container is already started
-docker-compose up --force-recreate -d nginx
+docker-compose up --force-recreate --build -d nginx
 
 # Select appropriate email arg
 case "$email" in
