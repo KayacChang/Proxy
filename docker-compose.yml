@@ -2,6 +2,7 @@ version: "3"
 
 services:
   nginx:
+    network_mode: host
     build:
       context: "."
       dockerfile: "./dockerfiles/proxy/Dockerfile"
@@ -15,6 +16,7 @@ services:
     command: /bin/sh -c "while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g 'daemon off;'"
 
   certbot:
+    network_mode: host
     image: certbot/certbot
     volumes:
       - ./certbot/conf:/etc/letsencrypt
