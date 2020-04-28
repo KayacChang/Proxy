@@ -10,19 +10,20 @@ which redirect the requests to subdomain and produce HTTPS
 - test certbot
 
 ```sh
-make certbot-test DOMAINS="sunnyland.fun cyberpunk-dev.sunnyland.fun api.sunnyland.fun" EMAIL=egg734631@gmail.com
+sudo make certbot-test DOMAINS="sunnyland.fun cyberpunk-dev.sunnyland.fun sushi-dev.sunnyland.fun api.sunnyland.fun" EMAIL=egg734631@gmail.com
 ```
 
 - production certbot
 
 ```sh
-make certbot-prod DOMAINS="sunnyland.fun cyberpunk-dev.sunnyland.fun api.sunnyland.fun" EMAIL=egg734631@gmail.com
+sudo make certbot-prod DOMAINS="sunnyland.fun cyberpunk-dev.sunnyland.fun sushi-dev.sunnyland.fun api.sunnyland.fun" EMAIL=egg734631@gmail.com
 ```
 
 - Check SSL Certificate
 
-[Cyberpunk](https://www.ssllabs.com/ssltest/analyze.html?d=cyberpunk-dev.sunnyland.fun)
 [API](https://www.ssllabs.com/ssltest/analyze.html?d=api.sunnyland.fun)
+[Sushi](https://www.ssllabs.com/ssltest/analyze.html?d=sushi%2ddev.sunnyland.fun)
+[Cyberpunk](https://www.ssllabs.com/ssltest/analyze.html?d=cyberpunk-dev.sunnyland.fun)
 
 ### Exec
 
