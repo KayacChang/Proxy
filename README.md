@@ -24,6 +24,8 @@ sudo make certbot-prod DOMAINS="sunnyland.fun cyberpunk-dev.sunnyland.fun sushi-
 [API](https://www.ssllabs.com/ssltest/analyze.html?d=api.sunnyland.fun)
 [Sushi](https://www.ssllabs.com/ssltest/analyze.html?d=sushi%2ddev.sunnyland.fun)
 [Cyberpunk](https://www.ssllabs.com/ssltest/analyze.html?d=cyberpunk-dev.sunnyland.fun)
+[Alien](https://www.ssllabs.com/ssltest/analyze.html?d=alien-dev.sunnyland.fun)
+[Catpunch](https://www.ssllabs.com/ssltest/analyze.html?d=catpunch-dev.sunnyland.fun)
 
 ### Exec
 
