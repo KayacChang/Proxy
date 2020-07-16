@@ -10,13 +10,13 @@ which redirect the requests to subdomain and produce HTTPS
 - test certbot
 
 ```sh
-sudo make certbot-test DOMAINS="sunnyland.fun cyberpunk-dev.sunnyland.fun sushi-dev.sunnyland.fun alien-dev.sunnyland.fun catpunch-dev.sunnyland.fun api.sunnyland.fun" EMAIL=egg734631@gmail.com
+sudo make certbot-test DOMAINS="sunnyland.fun cyberpunk-dev.sunnyland.fun sushi-dev.sunnyland.fun alien-dev.sunnyland.fun catpunch-dev.sunnyland.fun blackjack-dev.sunnyland.fun api.sunnyland.fun" EMAIL=egg734631@gmail.com
 ```
 
 - production certbot
 
 ```sh
-sudo make certbot-prod DOMAINS="sunnyland.fun cyberpunk-dev.sunnyland.fun sushi-dev.sunnyland.fun alien-dev.sunnyland.fun catpunch-dev.sunnyland.fun api.sunnyland.fun" EMAIL=egg734631@gmail.com
+sudo make certbot-prod DOMAINS="sunnyland.fun cyberpunk-dev.sunnyland.fun sushi-dev.sunnyland.fun alien-dev.sunnyland.fun catpunch-dev.sunnyland.fun blackjack-dev.sunnyland.fun api.sunnyland.fun" EMAIL=egg734631@gmail.com
 ```
 
 - Check SSL Certificate
@@ -26,6 +26,7 @@ sudo make certbot-prod DOMAINS="sunnyland.fun cyberpunk-dev.sunnyland.fun sushi-
 [Cyberpunk](https://www.ssllabs.com/ssltest/analyze.html?d=cyberpunk-dev.sunnyland.fun)
 [Alien](https://www.ssllabs.com/ssltest/analyze.html?d=alien-dev.sunnyland.fun)
 [Catpunch](https://www.ssllabs.com/ssltest/analyze.html?d=catpunch-dev.sunnyland.fun)
+[Blackjack](https://www.ssllabs.com/ssltest/analyze.html?d=blackjack-dev.sunnyland.fun)
 
 ### Exec
 
